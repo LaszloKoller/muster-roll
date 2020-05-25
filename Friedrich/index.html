@@ -1,0 +1,426 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link href="StyleSheet.css" rel="Stylesheet" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<title>Muster Roll</title>
+</head>
+<body>
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+	</script>
+	<script type="text/javascript">
+	_uacct = "UA-2336110-1";
+	urchinTracker();
+	</script> 
+	<div id="body_div">
+		<div class="section-half-spacer"></div>
+		<a href="http://www.histogame.de/e_index.html" target="_blank"><img id="FriedrichImage" alt="Friedrich" height="40" src="Images/friedrich.gif" width="296" /></a>
+		<div id="centering_div">
+
+			<div class="section-spacer"></div>
+			
+			<h1>A tutorial for playing Friedrich via CyberBoard</h1>
+			<p class="h1-note">by L&aacute;szl&oacute; &Aacute;. Koller</p>
+
+			<div class="section-spacer"></div>
+
+			<p>This tutorial is divided into the following sections:</p>
+			<p class="update">[Updated September 17, 2008 7:15am EDT]</p>
+			<ul>
+				<li><a href="#before_your_first_game">Before Your First Game</a></li>
+				<li><a href="#cyberboard_files">CyberBoard Game Box and Scenario Files</a></li>
+				<li><a href="#understanding_cyberboard_files">Understanding CyberBoard Files</a></li>
+				<li><a href="#cyberboard_concepts_trays_and_markers">CyberBoard Concepts: Trays and Markers</a></li>
+				<li><a href="#game_markers">Game Markers</a></li>
+				<li><a href="#setting_up_your_game">Setting Up Your Game</a></li>
+				<li><a href="#starting_your_game">Starting Your Game</a></li>
+				<li><a href="#creating_a_move_file">Creating a Move File</a>
+					<ol>
+						<li><a href="#one_tactical_cards">Tactical Cards</a></li>
+						<li><a href="#two_movement">Movement</a></li>
+						<li><a href="#three_combat">Combat</a></li>
+						<li><a href="#four_retroactive_conquests">Retroactive Conquests</a></li>
+						<li><a href="#five_supply">Supply</a></li>
+					</ol>
+				</li>
+				<li><a href="#saving_your_move_file">Saving Your Move File</a></li>
+				<li><a href="#loading_a_move_file">Loading a Move File</a></li>
+				<li><a href="#move_file_naming_convention">Move File Naming Convention</a></li>
+			</ul>
+
+			<div class="section-spacer"></div>
+
+			<h2><a name="before_your_first_game">Before Your First Game</a></h2>
+			<p>You will need to install CyberBoard (by Dale L. Larson) onto your computer.
+				To download the latest version of CyberBoard onto your computer, visit: 
+				<a href="http://cyberboard.brainiac.com" target="_blank">http://cyberboard.brainiac.com</a></p>
+
+			<div class="section-spacer"></div>
+
+			<h2><a name="cyberboard_files">CyberBoard Game Box and Scenario Files</a></h2>
+			<p>In order to play <i>Friedrich</i> via CyberBoard, you will need to download the following compressed file (.zip):</p>
+			<div style="height:32px;text-align:center;width:100%;">
+				<div style="height:32px;margin:auto;vertical-align:middle;width:144px;">
+					<div style="float:left;"><a class="link" href="Downloads/Friedrich%20v08.zip" onClick="javascript:urchinTracker ('/Friedrich/Downloads/Friedrich v08.zip');"><img alt="" height="32" src="Images/download_icon.gif" width="32" /></a></div>
+					<div style="float:right;margin-top:7px;"><a class="link" href="Downloads/Friedrich%20v08.zip" onClick="javascript:urchinTracker ('/Friedrich/Downloads/Friedrich v08.zip');">Friedrich v08.zip</a></div>
+				</div>
+			</div>
+			<p>Once downloaded, you will need to extract the compressed file (.zip) and save its constituent files into a folder on your computer.
+				The following constituent files can be found in the compressed file (.zip):</p>
+			<table cellspacing="0">
+				<tr>
+					<th>Filename</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td nowrap="nowrap">Friedrich v08.gbx</td>
+					<td>CyberBoard Game Box file</td>
+				</tr>
+				<tr>
+					<td nowrap="nowrap">Friedrich v08 (4-player).gsn</td>
+					<td>CyberBoard Scenario file for a 4-player game</td>
+				</tr>
+				<tr>
+					<td nowrap="nowrap">Friedrich v08 (3-player).gsn</td>
+					<td>CyberBoard Scenario file for a 3-player game</td>
+				</tr>
+				<tr>
+					<td nowrap="nowrap">Friedrich v08 (2-player) - The Austrian Theatre.gsn</td>
+					<td>CyberBoard Scenario file for the 2-player &quot;The Austrian Theatre&quot; game</td>
+				</tr>
+				<tr>
+					<td nowrap="nowrap">Friedrich v08 (2-player) - The War in the West.gsn</td>
+					<td>CyberBoard Scenario file for a 2-player &quot;The War in the West&quot; game</td>
+				</tr>
+			</table>
+			<p>This CyberBoard game box was designed to be used with CyberBoard v3.03. This implementation of <i>Friedrich</i> is bilingual, 
+				and as applicable and appropriate nearly all labels are in both German (Deutsch) and English. If you find any errors or discrepancies,
+				please do not hesitate to <a href="http://mailhide.recaptcha.net/d?k=01P0PG0fC1z5Ry55MzCaIHgQ==&amp;c=NmAvdG6RSrt224WqWgLtSrNA3DmphLGjxEJmKMe0lVw=" onclick="window.open('http://mailhide.recaptcha.net/d?k=01P0PG0fC1z5Ry55MzCaIHgQ==&amp;c=NmAvdG6RSrt224WqWgLtSrNA3DmphLGjxEJmKMe0lVw=', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">contact me</a>. Thank you and good gaming!</p>
+			<p>The complete, current rules for <i>Friedrich</i> may be found here: <a href="http://www.histogame.de/e_download.html" target="_blank">http://www.histogame.de/e_download.html</a></p>
+
+			<div class="section-spacer"></div>
+
+			<div class="caption-area-center">
+				<img alt="CyberBoard playing board" height="628" src="Images/board.jpg" width="682" />
+				<div class="caption">Screenshot of CyberBoard playing board</div>
+			</div>
+
+			<div class="section-spacer"></div>
+
+			<h2><a name="understanding_cyberboard_files">Understanding CyberBoard Files</a></h2>
+			<p>There are four (4) distinct files that CyberBoard uses when playing any game. Two of these are used by the CyberBoard program to create your game, 
+				and two will be used by the players during the course of your CyberBoard game. They are:</p>
+			<table cellspacing="0">
+				<tr>
+					<th>File&nbsp;Type</th>
+					<th>File&nbsp;Extension</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>Game&nbsp;Box</td>
+					<td style="text-align:center;">.gbx</td>
+					<td>The CyberBoard game box file contains all of the graphics and other game elements that your computers needs to visually render 
+						the game you are playing.</td>
+				</tr>
+				<tr>
+					<td>Scenario</td>
+					<td style="text-align:center;">.gsn</td>
+					<td>The CyberBoard scenario file contains the instructions used by CyberBoard to implement game specific aspects of the game you are playing, 
+						such as how many players are in the game and the initial setup for the game.</td>
+				</tr>
+				<tr>
+					<td>Game</td>
+					<td style="text-align:center;">.gam</td>
+					<td>The CyberBoard game file contains all of the details of your CyberBoard game from your point-of-view. Each player will have his/her 
+						own unique game file during your game.<br /><span class="note">NOTE: This is the file you will need to play your game. When you play 
+						your CyberBoard game, you will need to load this file before you can make any moves (or watch anyone else's moves). This file will be 
+						updated by move files (.gmv; see below) created by all players during the course of your game.</span></td>
+				</tr>
+				<tr>
+					<td>Recording</td>
+					<td style="text-align:center;">.gmv</td>
+					<td>The CyberBoard recording file contains all of the recorded activity that a player performs at one time during his/her turn (or his/her 
+						opponent's turn in response to an opponent's attack; see Combat below). Many veteran 
+						CyberBoard gamers refer to this file as the "move file".<br /><span class="note">NOTE: When you play your CyberBoard game, you will 
+						create move files so that the other players can see what you did during your turns; also, you will load move files created by the other 
+						players so that you can see what the other players did during their turns.</span></td>
+				</tr>
+			</table>
+
+			<div class="section-spacer"></div>
+
+			<h2><a name="cyberboard_concepts_trays_and_markers">CyberBoard Concepts: Trays and Markers</a></h2>
+			<p>There are two more concepts to understand when using CyberBoard: trays and markers.</p>
+			<p>All pieces used during a CyberBoard game are located in trays. CyberBoard uses a movable window to represent a tray. Each tray window 
+				has a drop down list near its titlebar; you may change the tray displayed by choosing a different tray name in the drop down list. CyberBoard 
+				has three (3) trays: Tray A, Tray B, and Markers. All three tray windows may be open at the same time.</p>
+			<table cellspacing="0">
+				<tr>
+					<th>Tray</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>Tray&nbsp;A&nbsp;<br />Tray&nbsp;B</td>
+					<td>Any game piece originating in one of these trays may never be deleted; these pieces are a permanent part of the game. There are set, 
+						finite number of these pieces in the game. (However many you see, are how many there are.) You can move these pieces on the game board, 
+						rotate them, turn them over, or even return them to a tray, but you cannot delete them.<br /><span class="example">Examples of 
+						permanent pieces used in <i>Friedrich</i> include generals, supply trains, tactical cards, and control markers.</span></td>
+				</tr>
+				<tr>
+					<td>Markers</td>
+					<td>The tray named &quot;Markers&quot; is a special tray. Any game piece originating in this tray may be deleted; these pieces are not a 
+						permanent part of the game. There are an infinite number of each piece in each marker tray. You can move these pieces on the game board, 
+						rotate them, turn them over, or you can delete them, but you can never return them to a tray.<br /><span class="example">Examples of 
+						temporary markers used in <i>Friedrich</i> include army-totals, comments, and reserve values.</span></td>
+				</tr>
+			</table>
+			<p class="note">NOTE: Some trays are &quot;owned&quot; by players, while others are public to all players. The contents (game pieces) of owned trays are marked as 
+				belonging to the owning player, unless and until he/she releases ownership of the piece.</p>
+
+			<div class="section-spacer"></div>
+
+			<h2><a name="game_markers">Game Markers</a></h2>
+			<p>The following temporary markers are used in this game box:</p>
+			<table cellspacing="0">
+				<tr>
+					<th>Marker</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td nowrap="nowrap">Gesamtzahl/Army-Total</td>
+					<td>These markers are used to summarize each player's total army size. Additionally, during combat these markers summarize each player's current score.</td>
+				</tr>
+				<tr>
+					<td nowrap="nowrap">Kommentar/Comment</td>
+					<td>This marker is used to make temporary annotations during the game.</td>
+				</tr>
+				<tr>
+					<td nowrap="nowrap">Spielmarken/Game Markers</td>
+					<td>These markers are primarily used to annotate Card of Fate-related aspects of the game. These include the initial turn marker [the hourglass marker], 
+						and a marker to show that specific Cards of Fate have already been played during the game [the red &quot;X&quot;].</td>
+				</tr>
+				<tr>
+					<td nowrap="nowrap">TK-Marken/TC Markers</td>
+					<td>These markers are used to set how many tactical cards are drawn by each nation.</td>
+				</tr>
+				<tr>
+					<td nowrap="nowrap">Wert der Reserve/Reserve Value</td>
+					<td>These markers are used to set the value (from 1 to 10) of Reserve tactical cards played during the game.</td>
+				</tr>
+			</table>
+
+			<div class="section-spacer"></div>
+
+			<h2><a name="setting_up_your_game">Setting Up Your Game</a></h2>
+			<p>Before you begin, you will need to decide whether you want to play a 2-, 3-, or 4-player scenario of <i>Friedrich</i>. Please note the 3- and 4-player 
+				scenarios are standard games of <i>Friedrich</i>, while the two 2-player scenarios are sub-games focusing on only specific region of the full game board. 
+				One of the 2-player scenarios focuses on the western front (France, Hanover, and Prussia), and the other focuses on the southern front (Austria, 
+				Imperial Army, and Prussia).</p>
+			<ol>
+				<li>Launch CyberBoard (CBPlay.exe).</li>
+				<li>From the <span class="menu">File</span> menu, choose <span class="menu">New...</span>.</li>
+				<li>In the window entitled &quot;New&quot;, highlight <span class="menu">Game</span>, and press the <span class="menu">OK</span> button.</li>
+				<li>In the window entitled &quot;Select Initial Scenario for Game&quot;, navigate to the <i>Friedrich</i> CyberBoard files on your computer, then highlight the 
+					scenario you want to play, and press the <span class="menu">Open</span> button.</li>
+				<li>In the window entitled &quot;Creating Multiplayer Game&quot;, press the <span class="menu">OK</span> button.
+					<br /><span class="note">NOTE: It is possible to create an optional referee game file (.gam) during this step. A referee game file allows 
+					its user to see all aspects of the game, including trays and game pieces owned by specific players.</span></li>
+				<li>In the window entitled &quot;Select Base Name for Player Game Files&quot;, type in a name for your game and press the <span class="menu">Save</span> 
+					button. (CyberBoard will now create a set of files named after each player in the game as well as a spectator game file.)</li>
+			</ol>
+			<p class="note">NOTE: CyberBoard assumes that the game box file (.gbx) is in the same folder as your game file (.gam); otherwise, CyberBoard will prompt 
+				you to supply the folder where you saved your game box file.</p>
+
+			<div class="section-spacer"></div>
+
+			<h2><a name="starting_your_game">Starting Your Game</a></h2>
+			<p>In all scenarios, the individual playing Friedrich will begin the game.</p>
+			<ol>
+				<li>Launch CyberBoard (CBPlay.exe).</li>
+				<li>From the <span class="menu">File</span> menu, choose <span class="menu">Open...</span>.</li>
+				<li>Load your game file (.gam).<br /><span class="example">For example, the player playing the part of Friedrich der Gro&szlig;e (i.e., Prussia &amp; Hanover) will select the game file (.gam) ending with 
+					&quot;<i>-Friedrich.gam</i>&quot; as his/her game file.</span></li>
+			</ol>
+			<p class="note">NOTE: The first time you open your game file, CyberBoard will prompt you to choose the game box file (.gbx) for your game&mdash;unless 
+				the game box file is in the same folder as your game file.</p>
+
+			<div class="section-spacer"></div>
+
+			<h2><a name="creating_a_move_file">Creating a Move File</a></h2>
+			<p>Each player is responsible for creating their own move files during the game.</p>
+			<p>Remember during a typical player's turn in <i>Friedrich</i>, a player will:</p>
+			<ol>
+				<li>Draw Tactical Cards.</li>
+				<li>Move his/her pieces as well as perform any movement-related game functions.</li>
+				<li>Resolve combat (if any).</li>
+				<li>Resolve retroactive conquests (if any).</li>
+				<li>Check for supply.</li>
+			</ol>
+			<p>The complete, current rules for <i>Friedrich</i> may be found here: <a href="http://www.histogame.de/e_download.html" target="_blank">http://www.histogame.de/e_download.html</a></p>
+
+			<div class="section-spacer"></div>
+
+			<h2><a name="one_tactical_cards">1. Tactical Cards</a></h2>
+			<p>Drag a tactical card from the current draw deck to your nation's TK/TCs tray. (For example, for the player playing Madame Pompadour, the 
+				nation tray is named &quot;TK/TCs: Frankreich/France&quot;.)</p>
+			<div>
+				<div class="caption-area-left"><img alt="Sample Tactical Cards" height="153" src="Images/tactical_cards.gif" width="215" /><div class="caption">Sample Tactical Cards (TCs)</div></div>
+				<div>
+					<p>When the game begins, the initial draw deck is the tray named &quot;TK/TCs #1&quot;. When a deck no longer has tactical cards in it, begin 
+						drawing cards from the next available tactical card deck tray (namely, #2, #3, and #4).</p>
+					<p>If all of the tactical cards have been drawn, then select all of the discarded tactical cards in the discard pile with the most tactical cards 
+						in them, and drag these used tactical cards into the tray named &quot;TK/TCs #1&quot;. Next, perform this again for the discard pile with the 
+						second-most tactical cards in them. All of the these tactical cards will automatically be shuffled and drawn randomly; no separate shuffling is 
+						necessary.</p>
+					<p>If your nation is required to discard a card, drag the card of your choice to the appropriate discard pile. After you do this, be sure to 
+						<span class="menu">Release Ownership</span> of the card.</p>
+					<p class="note">NOTE: As you become more proficient with CyberBoard, you may want to use a single Compound Move to encapsulate all of your tactical 
+						card draws (and/or discards, as appropriate).</p>
+				</div>
+			</div>
+
+			<div class="section-spacer"></div>
+
+			<h2><a name="two_movement">2. Movement</a></h2>
+			<div>
+				<div class="caption-box-right"><img alt="Exmaple of Movement" height="170" src="Images/movement.gif" width="200" /><div class="caption">Example of Movement</div></div>
+				<ol>
+					<li>Select the piece (general or supply train) you want to move and then from the <span class="menu">Actions</span> menu, choose 
+						<span class="menu">Begin a Plotted Move</span>. (You can also press the 'zig-zagging arrow' button on the toolbar.)</li>
+					<li>Click on all of the cities you want your piece to move through. After you have clicked on your final destination city, from the 
+						<span class="menu">Actions</span> menu, choose <span class="menu">Accept Plotted Move</span>.<br /><span class="note">NOTE: At any time before 
+						accepting a move, you may abort a plotted move. To do so, from the <span class="menu">Actions</span> menu, choose 
+						<span class="menu">Discard Plotted Move</span>.)</span></li>
+					<li>Repeat steps #1 and #2 above for all of the pieces you want to move.</li>
+					<li>Finally, place &quot;Kontrollmarken/Control Markers&quot; on any objective cities that your generals mave have conquered. (The control marker pieces 
+						have two-sides, and come in two varieties: 1st Order and 2nd Order Objective markers. The reverse side of each control marker piece is the question mark
+						 symbol used for retroactive conquests.)</li>
+				</ol>
+			</div>
+			<p class="note">NOTE: There are buttons on the toolbar duplicating many of the functions of the File, Edit, Actions, and Playback menus. Additionally, 
+				you can right-click on the game board (or on any of the individual game pieces, after selecting them) to popup a context sensitive menu with many 
+				of the same functions available.</p>
+
+			<div class="section-spacer"></div>
+
+			<h2><a name="three_combat">3. Combat</a></h2>
+			<p>For each of your generals that ends its movement adjacent to any enemy general(s), you will have to resolve combat. This process will (potentially) 
+				require you and your opponent to create many move files (.gmv) as you play tactical cards during combat.</p>
+			<p>If you are the attacking nation [the active player], you use the top-half of the combat area; if you are the defending nation, you use the bottom-half of the combat area.</p>
+			<div>
+				<div class="caption-area-right"><img alt="Combat Area" height="185" src="Images/combat.gif" width="130" /><div class="caption">Combat Area</div></div>
+				<ol>
+					<li>Adjust the &quot;Sektor/Sector&quot; marker to the suits corresponding to each players' generals.</li>
+					<li>Drag the army size piece (a light number on dark background) for the appropriate general from your nation's army sheet to the appropriate section of the 
+						&quot;Kampf Tableau/Combat Area&quot; on the game board. (If you are in combat with a stack of generals, then repeat this for each general in 
+						the stack.) After you do this, be sure to &quot;Release Ownership&quot; of the army size piece so that you opponent will be able to see its value.</li>
+					<li>If you play a tactical card, drag the card from your nation's tray onto the appropriate half of the combat area. After you do this, be sure to: 
+						(a) <span class="menu">Release Ownership</span> of the card, and (b) turn the tactical card face-up.<br />To turn a tactical card over, select the piece 
+						you want to turn over and then from the <span class="menu">Actions</span> menu, choose <span class="menu">Turn Piece Over</span>.<br /> 
+						<span class="note">NOTE: You can also press the 'turn over' button on the toolbar, or press the Ctrl+I shortcut keys.</span></li>
+					<li>Use the &quot;Gesamtzahl/Army-Total&quot; markers to summarize your current score.</li>
+					<li>At this point, you will save your move file. <a href="#saving_your_move_file">See below.</a></li>
+				</ol>
+			</div>
+			<p>If combat continues between you and your opponent, then you will repeat steps #3, #4, and #5 until a winner has been determined.</p>
+			<p>Once a winner has been determined, move the &quot;Gewinner/Victor&quot; piece (the Pour le M&eacute;rite medal) to the left of the victorious general's name. 
+				(In a stack, this will be the lowest numbered general.)</p>
+			<p>Next, clean up the combat area by moving used tactical cards to the appropriate discard pile (be sure to turn the cards back face-down), delete 
+				the current score army-total markers, and return each general's army size piece to the army sheet.
+				A defeated general (or generals, if in a stack) must adjust his army size appropriately
+				as well as his nation's Gesamtzahl/Army-Total value.</p>
+			<p>Finally, if a general needs to be removed from the map, then drag that general's corresponding piece from the map onto the army sheet 
+				next to the left of his name.</p>
+			<p class="note">NOTE: When combat is initiated, the first file exchange will usually only involve the attacker (the active player) setting 
+				up his/her portion of the combat area and revealing his/her army size piece(s), and then the defender doing same (plus playing tactical card(s), 
+				if he/she has lower initial score). Next, the battling players will play tactical cards, saving and sending move files (.gmv) between each tactical card played.</p>
+
+			<div class="section-spacer"></div>
+
+			<h2><a name="four_retroactive_conquests">4. Retroactive Conquests</a></h2>
+			<p>If you have any control markers on the map with their question mark (&quot;?&quot;) side facing up, then you must now either: turn them over -or- remove 
+				them from the game board, based on the outcome of the relevant combat.</p>
+			<ul>
+				<li>To turn a control marker over, select the piece you want to turn over and then from the <span class="menu">Actions</span> menu, choose 
+					<span class="menu">Turn Piece Over</span>.<br /><span class="note">NOTE: You can also press the 'turn over' button on the toolbar, or 
+					press the Ctrl+I shortcut keys.</span></li>
+				<li>To remove a control marker, drag and drop the control marker back into the tray named &quot;Kontrollmarken/Control Markers&quot;.</li>
+			</ul>
+
+			<div class="section-spacer"></div>
+
+			<h2><a name="five_supply">5. Supply</a></h2>
+			<p>If at the end of your turn any of your generals are out-of-supply (OoS), then you must turn each of the out-of-supply generals face-down. To do so, 
+			select the piece you want to turn over and then from the <span class="menu">Actions</span> menu, choose <span class="menu">Turn Piece Over</span>.
+			<br /><span class="note">NOTE: You can also press the 'turn over' button on the toolbar, or press the Ctrl+I shortcut keys.</span></p>
+
+			<div class="section-spacer"></div>
+
+			<h2><a name="saving_your_move_file">Saving Your Move File</a></h2>
+			<p>Each time all of your activity at a given point in a game turn (your own, or your opponent's, if responding to an attack) is complete, you must save your move file.</p>
+			<ol>
+				<li>From the <span class="menu">File</span> menu, choose <span class="menu">Send Recorded Moves to File...</span> and then name your move file (.gmv). 
+					<a href="#move_file_naming_convention">See Move File Naming Convention below.</a><br /><span class="example">For example, <i>001F.gmv</i> for Friedrich's first move of the game.</span></li>
+				<li>Save your game. From the <span class="menu">File</span> menu, choose <span class="menu">Save</span>.<br /><span class="note">NOTE: You can also press 
+					the 'diskette' button on the toolbar, or press the Ctrl+S shortcut keys.</span></li>
+				<li>Using your email program, attach the created move file (.gmv) and send it to ALL of the players in your game.</li>
+			</ol>
+
+			<div class="section-spacer"></div>
+
+			<h2><a name="loading_a_move_file">Loading a Move File</a></h2>
+			<p>
+				All players need to load every other player's move files. To load a move file (.gmv):</p>
+			<ol>
+				<li>From the <span class="menu">File</span> menu, choose <span class="menu">Load Recorded Move File...</span>.</li>
+				<li>Step through your opponent's individual moves. From the <span class="menu">Playback</span> menu, choose <span class="menu">Next Move</span>.
+					<br /><span class="note">NOTE: You can also press the 'play' button [">"] on the toolbar, or press the F3 shortcut key.</span></li>
+				<li>When you have watched all of your opponent's moves, accept the move file. From the <span class="menu">Playback</span> menu, choose 
+					<span class="menu">Accept Move File Playback...</span>, and press <span class="menu">Yes</span> on the subsequent confirmation window.</li>
+				<li>Save your game. From the <span class="menu">File</span> menu, choose <span class="menu">Save</span>.<br /><span class="note">NOTE: You can also 
+					press the 'diskette' button on the toolbar, or press the Ctrl+S shortcut keys.</span></li>
+			</ol>
+			<p class="note">NOTE: Once you save your game file (.gam), you will only have to load move files (.gmv) created subsequent to the last loaded &amp; saved move file.</p>
+
+			<div class="section-spacer"></div>
+
+			<h2><a name="move_file_naming_convention">Move File Naming Convention</a></h2>
+			<p>Each player can name his/her move file in any way they wish. That said, it may be practical for all players to agree upon a standard move file 
+				naming convention before playing their game. One convenient method would be to name each move file with a three-digit sequential number following by the first-letter the player's (leader's) name.
+				<br /><span class="example">For example, Friedrich's first move file would be named: <i>001F.gmv</i>, Elisabeth's would 
+				be named: <i>002E.gmv</i>, etc.</span></p>
+			<p>In <i>Friedrich</i>, the players (leaders) are: Friedrich [F], Elisabeth [E], Maria Theresia [M], and Pompadour [P].</p>
+			<p class="note">NOTE: In this CyberBoard implementation of <i>Friedrich</i>, the name of Austria's and the Imperial Army's leader 
+				(at least initially) uses the German&mdash;not English&mdash;spelling of the name, hence &quot;Maria Theresia&quot; (not Maria Theresa).</p>
+			
+			<div class="section-spacer"></div>
+			
+			<hr />
+			
+			<div class="section-spacer"></div>
+
+			<p style="text-align:justify;">I want to thank the following individuals for their help and support in making this CyberBoard game box possible. First and foremost, 
+				I want to thank Richard Siv&eacute;l and histogame for their patience, support, and trust in making this project possible. Next, I want to thank Mark Christopher, 
+				Garry Haggerty, Brian R. Mullin, Bruce Spears, and Anton Telle for your individual assistance and insight; each of you helped propel this project in the 
+				right direction in your own way. Finally, I want to thank all of the playtesters who spent the time to help make this game box possible.<br /><br />If you find any errors or discrepancies, please do not hesitate to <a href="http://mailhide.recaptcha.net/d?k=01P0PG0fC1z5Ry55MzCaIHgQ==&amp;c=NmAvdG6RSrt224WqWgLtSrNA3DmphLGjxEJmKMe0lVw=" onclick="window.open('http://mailhide.recaptcha.net/d?k=01P0PG0fC1z5Ry55MzCaIHgQ==&amp;c=NmAvdG6RSrt224WqWgLtSrNA3DmphLGjxEJmKMe0lVw=', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">contact me</a>.<br />&nbsp;</p>
+			<p style="margin-right:20px;text-align:right;">Thank you and enjoy the game,</p>
+			<p style="margin-right:20px;text-align:right;"><i>L&aacute;szl&oacute;</i></p>
+
+			<div class="section-spacer"></div>
+			<div class="section-spacer"></div>
+
+			<p class="copyright"><i>Friedrich</i> &copy; 2004 <a class="copyright" href="http://www.histogame.de" target="_blank">histogame</a>. 
+				<a class="copyright" href="http://cyberboard.brainiac.com" target="_blank">CyberBoard</a> &copy; 1999-2008 Dale L. Larson. 
+				The CyberBoard implementation of <i>Friedrich</i> and this web page &copy; 2008 L&aacute;szl&oacute; &Aacute;. Koller.  All Rights Reserved.
+				Permission to use graphical features of the original board game, <i>Friedrich</i>, was explicitly granted by 
+				<a class="copyright" href="http://www.histogame.de" target="_blank">histogame</a>; these features are &copy; 2004-2007 
+				<a class="copyright" href="http://www.histogame.de" target="_blank">histogame</a>. Permission is hereby granted to copy the CyberBoard 
+				implementation of <i>Friedrich</i> electronically for your personal use only, provided it is copied in its entirety. Any deletion, alteration, or selling 
+				of this work, without the express written permission of <a class="copyright" href="http://www.histogame.de" target="_blank">histogame</a> 
+				and <a class="copyright" href="http://mailhide.recaptcha.net/d?k=01P0PG0fC1z5Ry55MzCaIHgQ==&amp;c=NmAvdG6RSrt224WqWgLtSrNA3DmphLGjxEJmKMe0lVw=" onclick="window.open('http://mailhide.recaptcha.net/d?k=01P0PG0fC1z5Ry55MzCaIHgQ==&amp;c=NmAvdG6RSrt224WqWgLtSrNA3DmphLGjxEJmKMe0lVw=', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">L&aacute;szl&oacute; &Aacute;. Koller</a> is strictly prohibited.</p>
+
+		</div>
+	</div>
+</body>
+</html>

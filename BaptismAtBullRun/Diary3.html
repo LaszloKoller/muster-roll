@@ -1,0 +1,136 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="X-UA-Compatible" content="IE=9" /><link href="StyleSheet.css" rel="Stylesheet" type="text/css" /><meta http-equiv="Content-Language" content="en" /><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta name="author" content="László Á. Koller" /><meta name="description" content="Baptism at Bull Run is an American Civil War game recreating the Battle of First Bull Run, July 21, 1861." /><title>
+	Baptism at Bull Run&mdash;Design Diary: Cuboids!
+</title>
+<!--[if lte IE 6]>
+	<script type="text/javascript" src="supersleight-min.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div id="ctl00_GoogleAnalytics">
+
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-2336110-5");
+			pageTracker._initData();
+		</script>
+
+</div>
+
+	<div id="IECenteringFrame"><div id="FFCenteringFrame">
+	<div id="HeaderFrame"><img alt="Baptism at Bull Run. The Battle of First Bull Run. July 21, 1861." border="0" src="Images/head_title.jpg" height="310" width="800" /></div>
+	<div id="MenuFrame">
+		<a class="menu" href="index.html">HOME</a> &nbsp; <span class="menu-separator">|</span> &nbsp; <a class="menu" href="Downloads.html" onclick="javascript:pageTracker._trackPageview('/BaptismAtBullRun/Downloads.html');">DOWNLOADS</a> &nbsp; <span class="menu-separator">|</span> &nbsp; <a class="menu" href="Competition.html">COMPETITION</a> &nbsp; <span class="menu-separator">|</span> &nbsp; <a class="menu" href="Strategy.html">STRATEGY</a> &nbsp; <span class="menu-separator">|</span> &nbsp; <a class="menu" href="DesignDiary.html">DESIGN</a> &nbsp; <span class="menu-separator">|</span> &nbsp; <a class="menu" href="Support.html">SUPPORT</a>
+	</div>
+	<div id="ContentFrame">
+
+	<div ID="DesignDiaryEntry">
+		<h1>III. Cuboids!</h1>
+		<p>With an overview of the map for <span class="emphasis">Baptism at Bull Run</span> complete, I would like to move on to the next major component of the game&mdash;the units.</p>
+		<p>The <a href="http://en.wikipedia.org/wiki/Cuboid" onclick="javascript:pageTracker._trackPageview('/External/en.wikipedia.org/wiki/Cuboid');" target="_blank">cuboids</a>, or rectangular parallelepipeds, that form the bulk of each player's army are differentiated by color, type, and strength. (Although designed with physical game pieces in mind, the units for now will remain computer-based graphical implementations only.)</p>
+		<p>One of the first decisions that I made concerning the units was the color to use for each side's army. I did briefly consider using blue and red game pieces, which would more closely mirror the look of period military maps. However, upon further reflection, I decided that using blue and gray units would be more appropriate. I did so simply because those two colors are so deeply ingrained into the psyche of how the Union and Confederacy are perceived.</p>
+		<p>The workhorse unit for both armies is the infantry unit and is available in 1-, 2-, and 3-strength varieties (where the number of symbols on the face of each unit is equal to one point of strength). In <span class="emphasis">Baptism at Bull Run</span>, each infantry unit represents a sub-brigade sized formation composed of one or more infantry regiments. For reference, typical American Civil War era infantry regiments were composed of approximately 1,000 officers and men (not accounting for attrition and disease, which could significantly reduced this number), while brigades were usually formed from 4 or 5 regiments.</p>
+		<p>The following are examples of a 2-strength USA infantry unit and a 1-strength CSA infantry unit respectively:</p>
+		<table cellspacing="0" class="diary-entry-table" width="300">
+			<tr>
+				<td align="center"><img alt="Example of a 2-strength Union infantry unit" height="16" src="Images/usa_inf.png" width="100" /></td>
+				<td align="center"><img alt="Example of a 1-strength Confederate infantry unit" height="16" src="Images/csa_inf.png" width="100" /></td>
+			</tr>
+			<tr>
+				<td align="center">2-strength USA infantry</td>
+				<td align="center">1-strength CSA infantry</td>
+			</tr>
+		</table>
+		<p>While infantry was the norm at the Battle of First Bull Run, cavalry was the exception. Although present on both sides, cavalry played a relatively small role during the battle itself. In the game, a cavalry unit typically represents multiple companies of cavalry, or troops. During the American Civil War, cavalry troops were composed of 100 troopers. As a result, both players have only a few cavalry units available to them (and only 1- and 2-strength units at that). Of the handful of cavalry units in the game, the Confederate player has more than the Union player. I should note that cavalry have two field commands uniquely available to them: charges and cavalry marches. (I will cover these field commands and others in more detail in the next design diary entry.)</p>
+		<p>The following are examples of a 1-strength USA cavalry unit and a 2-strength CSA cavalry unit respectively:</p>
+		<table cellspacing="0" class="diary-entry-table" width="300">
+			<tr>
+				<td align="center"><img alt="Example of a 1-strength Union cavalry unit" height="16" src="Images/usa_cav.png" width="100" /></td>
+				<td align="center"><img alt="Example of a 2-strength Confederate cavalry unit" height="16" src="Images/csa_cav.png" width="100" /></td>
+			</tr>
+			<tr>
+				<td align="center">1-strength USA cavalry</td>
+				<td align="center">2-strength CSA cavalry</td>
+			</tr>
+		</table>
+		<p>I should also note that both infantry and cavalry units have the ability to be reorganized (that is, merged or split) on the field of battle. (Staff commands, like reorganize, will be covered in a future design diary entry.)</p>
+		<p>Rounding out the third arm of each army is artillery. For the Union army, artillery batteries consisted of 6 field artillery pieces (or guns) plus their necessary crews and horses. On the other hand, the Confederate army had artillery batteries that usually consisted of 4 guns. An artillery unit in the game represents one or more of these artillery batteries. In <span class="emphasis">Baptism at Bull Run</span>, an artillery unit&mdash;which has already ranged enemy units&mdash;is capable of bombarding, including across <a href="Diary2.html#Boundaries" onclick="javascript:pageTracker._trackPageview('/BaptismAtBullRun/Diary2.html/Boundaries');" target="_blank">impassable boundaries</a>. Additionally, ranging artillery units may provide counter battery fire, thereby suppressing opposing artillery units from successfully bombarding.</p>
+		<p>The following are examples of USA and CSA artillery units respectively (all are 1-strength units):</p>
+		<table cellspacing="0" class="diary-entry-table" width="300">
+			<tr>
+				<td align="center"><img alt="Example of a Union artillery unit" height="16" src="Images/usa_art.png" width="100" /></td>
+				<td align="center"><img alt="Example of a Confederate artillery unit" height="16" src="Images/csa_art.png" width="100" /></td>
+			</tr>
+			<tr>
+				<td align="center">USA artillery</td>
+				<td align="center">CSA artillery</td>
+			</tr>
+		</table>
+		<p>A unit type unique to <span class="emphasis">Baptism at Bull Run</span> is the disrupted infantry unit. A disrupted infantry unit is for all intents and purposes a 0-strength infantry unit&mdash;although there are severe restrictions on what they can do.</p>
+		<p>My decision to include disrupted infantry units revolves around how battles were fought during the period. Although it did occur from time-to-time, most battles did not decimate entire units. Instead, units took some damage and then became disordered.</p>
+		<p>In <span class="emphasis">Baptism at Bull Run</span>, I wanted to show that even though a disordered (or disrupted) infantry unit may no longer be an effective fighting force, the men and their materiel are still on the field of battle (that is, they don't simply evaporate in a puff of smoke) and do from time-to-time have an affect on the battle. That said, if such a barely-cohesive unit is firmly pushed (i.e., forced to withdraw or retreat without support) then it will in the end disintegrate into a mass of individuals soldiers fleeing the battlefield and thus, finally be removed from the game board.</p>
+		<p>Unlike other units, disrupted infantry units have the unique ability to be rallied during the course of a game. At First Bull Run, there is a famous and specific instance of men from Bee's Brigade (the 4th Alabama) being rallied on Henry Hill, which is another reason for my inclusion of the disrupted infantry unit in the game. (Again, staff commands, which include the rally command, will be covered in a future design diary entry.)</p>
+		<p>	Examples of USA and CSA disrupted infantry units follow:</p>
+		<table cellspacing="0" class="diary-entry-table" width="300">
+			<tr>
+				<td align="center"><img alt="Example of a Union disrupted infantry unit" height="16" src="Images/usa_dis.png" width="100" /></td>
+				<td align="center"><img alt="Example of a Confederate disrupted infantry unit" height="16" src="Images/csa_dis.png" width="100" /></td>
+			</tr>
+			<tr>
+				<td align="center">USA disrupted infantry</td>
+				<td align="center">CSA disrupted infantry</td>
+			</tr>
+		</table>
+		<p>What units didn't make the cut? The most obvious is the 3-strength cavalry unit. Although, I originally did toy with the idea of including a stronger cavalry unit (for J.E.B. Stuart, of course) in the end the history did support the inclusion of such. (J.E.B. Stuart will simply have to make do with 2-strength cavalry units.) Additionally, some of my original design concepts included the possibility of 2-strength (or even 3-strength) artillery units. However, these unit never made it out of the R&amp;D laboratory.</p>
+		<p>For those interested, the orders of battle for the Battle of First Bull Run&mdash;as well as my interpretation of such for <span class="emphasis">Baptism at Bull Run</span>&mdash;may be downloaded as a portable document format file (.pdf):</p>
+		<div class="download-panel" style="margin-bottom:6px;">
+			<div class="download-icon"><a href="Downloads/BaBROoB.pdf" onclick="javascript:pageTracker._trackPageview('/BaptismAtBullRun/Downloads/BaBROoB.pdf');" target="_blank"><img alt="" border="0" height="32" src="Images/download_icon.gif" width="32" /></a></div>
+			<div class="download-link"><a class="download" href="Downloads/BaBROoB.pdf" onclick="javascript:pageTracker._trackPageview('/BaptismAtBullRun/Downloads/BaBROoB.pdf');" target="_blank">Orders of Battle</a></div>
+		</div>
+		<p>The next design diary entry will review the field commands that appear in the game.</p>
+	</div>
+	<p class="updated">Released: 2008-05-30 01:50 EDT.</p>
+	<script type="text/javascript">
+		pageTracker._trackPageview("/BaptismAtBullRun/Diary3.html");
+	</script>
+
+		<p>&nbsp;</p>
+		<p class="footnote">For questions and/or feedback, please send e-mail to: <a href="http://www.google.com/recaptcha/mailhide/d?k=01Ql1ghA0qoYwz1p3WlNTJjA==&c=uoY2Wh7yKyl3VNH1lS5C9u5ll6oXjqHzCSZm7GRikww=" onclick="pageTracker._trackPageview('/External/www.google.com/recaptcha'); window.open('http://www.google.com/recaptcha/mailhide/d?k=01Ql1ghA0qoYwz1p3WlNTJjA==&c=uoY2Wh7yKyl3VNH1lS5C9u5ll6oXjqHzCSZm7GRikww=', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Click to reveal this e-mail address">baptismatbullrun@....com</a> &nbsp; &nbsp; <span class="emphasis">(Click the hyperlink to reveal the e-mail address.)</span></p>
+		<p class="footnote">Further discussion about <span class="emphasis">Baptism at Bull Run</span> can be found at either of these game hobbyist websites:&nbsp; <a href="http://www.boardgamegeek.com/boardgame/36324" onclick="javascript:pageTracker._trackPageview('/External/boardgamegeek.com');" target="_blank" title="Click to visit Baptism at Bull Run on BoardGameGeek">BoardGameGeek</a> &nbsp;<a href="http://talk.consimworld.com/WebX/Boardgaming/Individual%20Game%20or%20Series%20Discussion/Era%3A%20Gunpowder/American%20Civil%20War/68" onclick="javascript:pageTracker._trackPageview('/External/talk.consimworld.com');" target="_blank" title="Click to visit Baptism at Bull Run on ConsimWorld">ConsimWorld</a></p>
+		<div id="TranslationBar" class="notranslate">
+			<a href="http://translate.google.com/translate_c?tl=ar&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary3.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="العربية" title="العربية" src="Images/flag_saudi_arabia.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=cs&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary3.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Česky" title="Česky" src="Images/flag_czech_republic.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=da&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary3.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Dansk" title="Dansk" src="Images/flag_denmark.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=de&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary3.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Deutsch" title="Deutsch" src="Images/flag_germany.png" height="16" width="16" /></a>
+			<a href="https://muster-roll.com/BaptismAtBullRun/Diary3.html"><img alt="English" title="English" src="Images/flag_usa.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=el&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary3.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Ελληνικά" title="Ελληνικά" src="Images/flag_greece.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=es&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary3.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Espa&ntilde;ol" title="Espa&ntilde;ol" src="Images/flag_spain.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=fr&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary3.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Fran&ccedil;ais" title="Fran&ccedil;ais" src="Images/flag_france.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=it&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary3.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Italiano" title="Italiano" src="Images/flag_italy.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=iw&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary3.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="עברית" title="עברית" src="Images/flag_israel.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=ko&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary3.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="한국어" title="한국어" src="Images/flag_south_korea.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=hu&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary3.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Magyar" title="Magyar" src="Images/flag_hungary.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=nl&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary3.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Nederlands" title="Nederlands" src="Images/flag_netherlands.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=no&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary3.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Norsk" title="Norsk" src="Images/flag_norway.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=ja&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary3.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="日本語" title="日本語" src="Images/flag_japan.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=pl&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary3.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Polski" title="Polski" src="Images/flag_poland.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=pt&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary3.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Portugu&ecirc;s" title="Portugu&ecirc;s" src="Images/flag_portugal.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=ru&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary3.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Русский" title="Русский" src="Images/flag_russia.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=fi&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary3.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Suomi" title="Suomi" src="Images/flag_finland.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=sv&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary3.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Svenska" title="Svenska" src="Images/flag_sweden.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=zh-cn&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary3.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="中文" title="中文" src="Images/flag_china.png" height="16" width="16" /></a>
+		</div>
+	</div>
+	<div id="FooterFrame">
+		Copyright &copy; 2008-2011. L&aacute;szl&oacute; &Aacute;. Koller. All rights reserved. Unauthorized distribution prohibited.
+		<div style="border-style: none; height: 4px; width: 700px;"></div>
+		Pencil &amp; Wash Drawing: &quot;Colonel Burnside's brigade, First and Second Rhode Island, and Seventy-first New York regiments, with their artillery, attacking the rebel batteries at Bull Run.&quot;, by Alfred R. Waud (1861).</div>
+	</div></div>
+</body>
+</html>

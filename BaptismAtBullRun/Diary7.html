@@ -1,0 +1,90 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="X-UA-Compatible" content="IE=9" /><link href="StyleSheet.css" rel="Stylesheet" type="text/css" /><meta http-equiv="Content-Language" content="en" /><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta name="author" content="László Á. Koller" /><meta name="description" content="Baptism at Bull Run is an American Civil War game recreating the Battle of First Bull Run, July 21, 1861." /><title>
+	Baptism at Bull Run&mdash;Design Diary: Esprit de Corps
+</title>
+<!--[if lte IE 6]>
+	<script type="text/javascript" src="supersleight-min.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div id="ctl00_GoogleAnalytics">
+
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-2336110-5");
+			pageTracker._initData();
+		</script>
+
+</div>
+
+	<div id="IECenteringFrame"><div id="FFCenteringFrame">
+	<div id="HeaderFrame"><img alt="Baptism at Bull Run. The Battle of First Bull Run. July 21, 1861." border="0" src="Images/head_title.jpg" height="310" width="800" /></div>
+	<div id="MenuFrame">
+		<a class="menu" href="index.html">HOME</a> &nbsp; <span class="menu-separator">|</span> &nbsp; <a class="menu" href="Downloads.html" onclick="javascript:pageTracker._trackPageview('/BaptismAtBullRun/Downloads.html');">DOWNLOADS</a> &nbsp; <span class="menu-separator">|</span> &nbsp; <a class="menu" href="Competition.html">COMPETITION</a> &nbsp; <span class="menu-separator">|</span> &nbsp; <a class="menu" href="Strategy.html">STRATEGY</a> &nbsp; <span class="menu-separator">|</span> &nbsp; <a class="menu" href="DesignDiary.html">DESIGN</a> &nbsp; <span class="menu-separator">|</span> &nbsp; <a class="menu" href="Support.html">SUPPORT</a>
+	</div>
+	<div id="ContentFrame">
+
+	<div ID="DesignDiaryEntry">
+		<h1>VII. Esprit de Corps</h1>
+		<p>Having completed an overview of the game's mechanics, I wanted to devote a diary entry to review, what is in my opinion, the heart or the engine that drives <span class="emphasis">Baptism at Bull Run</span>.</p>
+		<p>Like its predecessor (<span class="emphasis">Bonaparte at Marengo</span> by Simmons Games), <span class="emphasis">Baptism at Bull Run</span> consolidates the effects of unit attrition, spent ammunition, exhaustion, as well as esprit de corps into a single trackable metric known as &quot;morale&quot;.</p>
+		<p>At its most basic level, the object of the game is to use your units to outmaneuver your opponent's units and inflict damage to them, including loss of morale, while at the same time losing less morale than your opponent.</p>
+		<p>Before I cover some of the ways in which morale is lost (or gained, for that matter), I wanted to quickly review the end game conditions for <span class="emphasis">Baptism at Bull Run</span>. The most straightforward and decisive way to win is to reduce your opponent's army morale to zero, or to demoralize your opponent, without being demoralized yourself. (Naturally, this is easier said, or in this case: written, than done.) I should point out that demoralization ends the game immediately.</p>
+		<p>However, if neither player has been able to demoralize his/her opponent on or before the last turn of the game, then a marginal victory is won by one of the players based on the <span class="emphasis">burden of victory</span>. In <span class="emphasis">Baptism at Bull Run</span>, the burden of victory falls upon the Union player's shoulders and is simply: the Union's morale must exceed the Confederacy's morale by 7 or more. If after the last turn of the game has been played and the condition of the burden of victory has been met, then the Union player wins; otherwise, the Confederate player wins. Finally, just to be complete, on the off-chance that both players' armies are demoralized simultaneously, then the active player loses.</p>
+		<p>Having reviewed how players win or lose, I wanted to outline the morale affecting factors in the game. Starting with some unit-specific cases, any artillery unit that is 'spiked' causes a one point morale loss. (More on why spiking artillery may be necessary in a moment.) Cavalry units that charge are always damaged and thus, cause (at least) one point of morale loss.</p>
+		<p>In addition to these unit-specific cases, there are numerous actions and events that cause morale loss during a game. They include: assaults, bombardments, withdrawals, retreats, objective captures, and reinforcement mobilizations. Other field commands, like advances or maneuvers, do (or may, in the case of maneuvers) cause morale loss, but these are covered under the rules for retreats and withdrawals.</p>
+		<p>Assaults, as one might expect, are a nasty business. When they occur, both attacker and defender get bloodied&mdash;although if an assault is successful, the defender may be much worse off (especially if additional units have to retreat). Bombarding artillery units can also cause morale loss, unless they are suppressed by counter battery fire. A word to the wise regarding bombarding artillery: don't get caught at a wide boundary facing two bombarding artillery units without any of your own. (If you do, you won't soon repeat that mistake.)</p>
+		<p>Withdrawals simulate the disordering that units suffer when they are forced to reposition themselves on the battlefield while being pressured. Retreats, however, wreak havoc upon units (as well as on the army's overall esprit de corps) as they are forced to flee under fire.</p>
+		<p>Withdrawals and retreats, while related, fill two different niches in the game. A withdrawal occurs as a direct result of one player outmaneuvering another. (In fact when unblocked, a maneuver causes a withdrawal to occur.) Without going into the specifics, most units that withdraw from a locale suffer a step loss (and a corresponding one point morale deduction per step). However, cavalry units that withdraw from a locale's reserve suffer no ill effects. A retreat, on the other hand, can be a rather unpleasant event and may be caused by an advance, successful assault, or unblocked charge. Units that are forced to retreat from a locale suffer either one or two step losses, based on the geometry of the locale being retreated from. On top of that, the player whose units are being forced to retreat suffers an additional one point of morale point loss for the humiliation of being forced to retreat. One effect that both withdrawals and retreats have in common is that any artillery unit forced to withdraw or retreat is immediately eliminated. (This has another consequence as well, but more on that in a moment.)</p>
+		<p>Covered briefly in a <a href="Diary2.html#Objectives" onclick="javascript:pageTracker._trackPageview('/BaptismAtBullRun/Diary2.html/Objectives');" target="_blank">previous design diary entry</a>, objective locales that are captured cause an immediate (and potentially devastating) five point morale loss. I wanted to add incentive for both of the players to defend such locales and thereby force combat to occur. The objective locales themselves were not meant to symbolize important locales, but instead represent the vulnerability of off-map strategic goals that must be defended at all costs. Thus, if one player captures an objective locale, then their opponent's last line of defense can be considered to have failed. Once captured, a player's morale is penalized <span class="emphasis">every turn</span> that an objective locale is occupied by enemy units. I should point out, however, that only 2- or 3-strength infantry units that occupy an objective locale may claim its capture; no other unit may capture an objective locale (although capture-ineligible units may, of course, still occupy an objective locale).</p>
+		<p>Mobilizing reinforcements also reduces morale. The two point deduction in morale reflects a number of factors from the army commander's point-of-view, including the effect of committing his reserves and the army's ability to fight a protracted campaign (namely, reserves 'spent' today are not available to fight tomorrow). Each mobilization of a reinforcement group penalizes an army's morale. Both the Union and Confederate armies have four reinforcement groups available for mobilization. (Mobilize wisely.)</p>
+		<p>With all of these sources of morale loss, is there any way for an army to regain some of its lost morale? The answer to that is: yes.</p>
+		<p>The first way to accomplish this is to rally disrupted infantry units. At the Battle of First Bull Run, the most famously reported rally was that of the 4th Alabama regiment (CSA). Having suffered heavy casualties and in retreat, the regiment was successfully rallied and returned to the fight. In the game, every <span class="emphasis">pair</span> of disrupted infantry units rallied in a locale is exchanged for one 1-strength infantry unit that is returned to play (and the rallying player earns one point of morale for this action). I should note that rallying is not a trivial matter, since it requires two disrupted infantry units to be positioned in the same locale.</p>
+		<p>Finally, as I alluded to earlier, elimination of an artillery unit by the opposing player's actions has an additional consequence, which is: the opposing player earns one point of morale. At the Battle of First Bull Run during the battle for Henry Hill, the Union and Confederate armies fought for control of unsupported Union artillery taken by the Confederates. While control of these field pieces was for a time regained by the Union, the Confederate forces were the ones to finally win the fight for these artillery. The lesson for <span class="emphasis">Baptism at Bull Run</span>, players should protect their guns... or spike them.</p>
+		<p>With an overview of <span class="emphasis">Baptism at Bull Run</span>'s major mechanics complete, the next and final design diary entry will review the tasks (and time) necessary to make this game a reality.</p>
+	</div>
+	<p class="updated">Released: 2008-07-07 01:50 EDT.</p>
+	<script type="text/javascript">
+		pageTracker._trackPageview("/BaptismAtBullRun/Diary7.html");
+	</script>
+
+		<p>&nbsp;</p>
+		<p class="footnote">For questions and/or feedback, please send e-mail to: <a href="http://www.google.com/recaptcha/mailhide/d?k=01Ql1ghA0qoYwz1p3WlNTJjA==&c=uoY2Wh7yKyl3VNH1lS5C9u5ll6oXjqHzCSZm7GRikww=" onclick="pageTracker._trackPageview('/External/www.google.com/recaptcha'); window.open('http://www.google.com/recaptcha/mailhide/d?k=01Ql1ghA0qoYwz1p3WlNTJjA==&c=uoY2Wh7yKyl3VNH1lS5C9u5ll6oXjqHzCSZm7GRikww=', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Click to reveal this e-mail address">baptismatbullrun@....com</a> &nbsp; &nbsp; <span class="emphasis">(Click the hyperlink to reveal the e-mail address.)</span></p>
+		<p class="footnote">Further discussion about <span class="emphasis">Baptism at Bull Run</span> can be found at either of these game hobbyist websites:&nbsp; <a href="http://www.boardgamegeek.com/boardgame/36324" onclick="javascript:pageTracker._trackPageview('/External/boardgamegeek.com');" target="_blank" title="Click to visit Baptism at Bull Run on BoardGameGeek">BoardGameGeek</a> &nbsp;<a href="http://talk.consimworld.com/WebX/Boardgaming/Individual%20Game%20or%20Series%20Discussion/Era%3A%20Gunpowder/American%20Civil%20War/68" onclick="javascript:pageTracker._trackPageview('/External/talk.consimworld.com');" target="_blank" title="Click to visit Baptism at Bull Run on ConsimWorld">ConsimWorld</a></p>
+		<div id="TranslationBar" class="notranslate">
+			<a href="http://translate.google.com/translate_c?tl=ar&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary7.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="العربية" title="العربية" src="Images/flag_saudi_arabia.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=cs&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary7.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Česky" title="Česky" src="Images/flag_czech_republic.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=da&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary7.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Dansk" title="Dansk" src="Images/flag_denmark.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=de&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary7.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Deutsch" title="Deutsch" src="Images/flag_germany.png" height="16" width="16" /></a>
+			<a href="https://muster-roll.com/BaptismAtBullRun/Diary7.html"><img alt="English" title="English" src="Images/flag_usa.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=el&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary7.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Ελληνικά" title="Ελληνικά" src="Images/flag_greece.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=es&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary7.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Espa&ntilde;ol" title="Espa&ntilde;ol" src="Images/flag_spain.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=fr&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary7.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Fran&ccedil;ais" title="Fran&ccedil;ais" src="Images/flag_france.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=it&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary7.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Italiano" title="Italiano" src="Images/flag_italy.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=iw&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary7.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="עברית" title="עברית" src="Images/flag_israel.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=ko&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary7.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="한국어" title="한국어" src="Images/flag_south_korea.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=hu&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary7.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Magyar" title="Magyar" src="Images/flag_hungary.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=nl&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary7.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Nederlands" title="Nederlands" src="Images/flag_netherlands.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=no&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary7.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Norsk" title="Norsk" src="Images/flag_norway.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=ja&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary7.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="日本語" title="日本語" src="Images/flag_japan.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=pl&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary7.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Polski" title="Polski" src="Images/flag_poland.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=pt&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary7.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Portugu&ecirc;s" title="Portugu&ecirc;s" src="Images/flag_portugal.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=ru&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary7.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Русский" title="Русский" src="Images/flag_russia.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=fi&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary7.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Suomi" title="Suomi" src="Images/flag_finland.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=sv&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary7.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Svenska" title="Svenska" src="Images/flag_sweden.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=zh-cn&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary7.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="中文" title="中文" src="Images/flag_china.png" height="16" width="16" /></a>
+		</div>
+	</div>
+	<div id="FooterFrame">
+		Copyright &copy; 2008-2011. L&aacute;szl&oacute; &Aacute;. Koller. All rights reserved. Unauthorized distribution prohibited.
+		<div style="border-style: none; height: 4px; width: 700px;"></div>
+		Pencil &amp; Wash Drawing: &quot;Colonel Burnside's brigade, First and Second Rhode Island, and Seventy-first New York regiments, with their artillery, attacking the rebel batteries at Bull Run.&quot;, by Alfred R. Waud (1861).</div>
+	</div></div>
+</body>
+</html>

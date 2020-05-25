@@ -1,0 +1,128 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="X-UA-Compatible" content="IE=9" /><link href="StyleSheet.css" rel="Stylesheet" type="text/css" /><meta http-equiv="Content-Language" content="en" /><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta name="author" content="László Á. Koller" /><meta name="description" content="Baptism at Bull Run is an American Civil War game recreating the Battle of First Bull Run, July 21, 1861." /><title>
+	Baptism at Bull Run&mdash;Design Diary: In the Field: Securing Approaches &amp; In Reserve
+</title>
+<!--[if lte IE 6]>
+	<script type="text/javascript" src="supersleight-min.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div id="ctl00_GoogleAnalytics">
+
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-2336110-5");
+			pageTracker._initData();
+		</script>
+
+</div>
+
+	<div id="IECenteringFrame"><div id="FFCenteringFrame">
+	<div id="HeaderFrame"><img alt="Baptism at Bull Run. The Battle of First Bull Run. July 21, 1861." border="0" src="Images/head_title.jpg" height="310" width="800" /></div>
+	<div id="MenuFrame">
+		<a class="menu" href="index.html">HOME</a> &nbsp; <span class="menu-separator">|</span> &nbsp; <a class="menu" href="Downloads.html" onclick="javascript:pageTracker._trackPageview('/BaptismAtBullRun/Downloads.html');">DOWNLOADS</a> &nbsp; <span class="menu-separator">|</span> &nbsp; <a class="menu" href="Competition.html">COMPETITION</a> &nbsp; <span class="menu-separator">|</span> &nbsp; <a class="menu" href="Strategy.html">STRATEGY</a> &nbsp; <span class="menu-separator">|</span> &nbsp; <a class="menu" href="DesignDiary.html">DESIGN</a> &nbsp; <span class="menu-separator">|</span> &nbsp; <a class="menu" href="Support.html">SUPPORT</a>
+	</div>
+	<div id="ContentFrame">
+
+	<div ID="DesignDiaryEntry">
+		<h1>IV. In the Field: Securing Approaches &amp; In Reserve</h1>
+		<p>In <span class="emphasis">Baptism at Bull Run</span>, there are two types of commands that players can issue to their units: field commands and staff commands. This design diary entry I will cover the various field commands used in the game.</p>
+		<p>Before I introduce the field commands, however, I should to take a moment to review some of the concepts surrounding movement and unit positioning on the game board. As I indicated in one of previous diary entries, the map is divided into areas called &quot;locales&quot;&mdash;a convention established in Simmons Games' <span class="emphasis">Bonaparte at Marengo</span>&mdash;with each locale separated from another locale by a rectangular box called a &quot;boundary.&quot; Each boundary (which may be one of three types as seen <a href="Diary2.html#Boundaries" onclick="javascript:pageTracker._trackPageview('/BaptismAtBullRun/Diary2.html/Boundaries');" target="_blank">here</a>) is either narrow or wide. A narrow boundary is as wide as one unit, while a wide boundary is as wide as two units placed end-to-end. In turn, each boundary has two approaches (one parallel to each long side of a boundary); an approach is an imaginary zone next to a boundary. A locale also has an area known as the reserve, which is the central area of the locale and like an approach is an imaginary region.</p>
+		<p>Examples of boundary widths and a locale's approaches &amp; reserve follow:</p>
+		<table cellspacing="0" class="diary-entry-table" width="300">
+			<tr>
+				<td align="center"><img alt="Example of a narrow and a wide boundary." height="300" src="Images/real_features.png" width="300" /></td>
+				<td align="center"><img alt="Example of a locale's approaches and reserve." height="300" src="Images/imaginery_features.png" width="300" /></td>
+			</tr>
+			<tr>
+				<td align="center">Narrow and wide boundaries</td>
+				<td align="center">Visual representations of a locale's imaginary features: approaches and reserve</td>
+			</tr>
+		</table>
+		<p>A unit in play must be positioned within a locale. A unit must either be: (a) in reserve or (b) securing an approach. Units in reserve are placed generally in the center of the locale, while units securing an approach are rotated so that they are parallel to a specific boundary and placed close to that boundary.</p>
+		<p>Examples of units in reserve and securing approaches follow:</p>
+		<table cellspacing="0" class="diary-entry-table" width="300">
+			<tr>
+				<td align="center"><img alt="Example of units securing approaches and in reserve." height="300" src="Images/approach_reserve.png" width="300" /></td>
+				<td style="text-align:left;">In the example to the left, we see:
+					<ol>
+						<li>Three Union units securing two different approaches (the 3-strength infantry and artillery at one approach, and the 1-strength infantry at another),</li>
+						<li>The Confederate infantry and artillery units securing two different approaches (opposite the Union units), and</li>
+						<li>Both Confederate cavalry units in reserve.</li>
+					</ol>
+					<img alt="" height="1" src="Images/x.gif" width="300" /></td>
+			</tr>
+		</table>
+		<p>With an overview of approaches and the reserve complete, I can move on to reviewing the field commands available in <span class="emphasis">Baptism at Bull Run</span>.</p>
+		<p>In <span class="emphasis">Baptism at Bull Run</span>, I wanted to create a command system in which each type of command was used for one purpose only. Another of my design goals was to have each possible 'action' require a command to initiate, which resulted in the following field commands:</p>
+		<ul type="disc">
+			<li>Advance</li>
+			<li>Assault</li>
+			<li>Bombard</li>
+			<li>Charge</li>
+			<li>Maneuver</li>
+			<li>March</li>
+		</ul>
+		<p>Within the Field Command Phase of a turn, a player may issue any of these commands in any order. (The phases of a game turn will be covered in a future design diary entry.)</p>
+		<p>A brief summary of each field command follows:</p>
+		<p>An <b>advance</b> is a move into an adjacent, enemy-occupied locale by units that are securing an approach; the boundary advanced across must be unoccupied by enemy units. An advance may not be blocked and it forces units to retreat. (Retreats, withdrawals, and other morale effects will be covered in a future design diary entry.)</p>
+		<p>An <b>assault</b> is an attack against enemy units in an adjacent locale; both attacking and defending units must be securing approaches opposite from each other (that is, the battling units must be securing approaches on either side of the same boundary). The number of units that may directly participate in an assault (that is, lead the assault or lead the defense against the assault) is based upon the width of the boundary. An assault's outcome is based upon the strengths of the units involved in the assault. Without going in to specifics, the following affect the resolution of an assault: attacking infantry units always suffer a penalty when assaulting; attacking cavalry units suffer a penalty against defending infantry units when assaulting; and, defending artillery units may support defending infantry/cavalry units (as long as the artillery units are not already preparing to bombard). A successful assault forces units to retreat.</p>
+		<p>An artillery unit may <b>bombard</b> (or fire) upon an adjacent, enemy-occupied locale from an approach. Before artillery can bombard, they must range their targets. (Artillery ranging and other Administration Phase actions will be covered in a future design diary entry.)</p>
+		<p>A <b>charge</b> is a move and attack on a non-adjacent, enemy-occupied locale by cavalry units in reserve. A charge requires the attacking cavalry units to move two locales. A charge is hybrid action that resolves either as an advance or as an assault depending whether the charge is blocked or not. Whether successful or not (and whether blocked or not), the charging cavalry unit will be weakened by the charge.</p>
+		<p>A <b>maneuver</b> is a move to an adjacent, enemy-occupied locale by units in reserve; the boundary maneuvered across must be unoccupied by enemy units. A maneuver may be blocked by the enemy units (and if they do block, they must be revealed); however, if the maneuver is not blocked, then it forces units to withdraw.</p>
+		<p>A <b>march</b> is a noncombat-related move into a locale not occupied by enemy units. Marches come in four varieties:</p>
+		<ul type="disc">
+			<li>Cavalry March</li>
+			<li>Field March</li>
+			<li>Local March</li>
+			<li>Road March</li>
+		</ul>
+		<p>A <b>cavalry march</b> is a two locale move available only to cavalry units. A <b>field march</b> is a move by which units move from the reserve of one locale into the reserve of an adjacent locale. A <b>local march</b> is a move within a locale by units that either: move into reserve from an approach or move to secure an approach from reserve. A <b>road march</b> allows units in reserve to move multiple locales by using a main or local road; multiple road marches may be 'chained' together in order to move multiple groups of units in adjacent locales in a column.</p>
+		<p>A field command that did not make it into the final version of the game is the entrenchment command. Entrenchments&mdash;a command available to infantry units only&mdash;allowed players to create defensive positions that hampered road marches and added artillery penalties to the approaches they modified. However, playtesting revealed that entrenchments added little to the game; instead, they slowed the pace of the game down. Because of this, the entrenchment command was ultimately dropped.</p>
+		<p>Naturally, the preceding information is only brief introduction to the field commands available in <span class="emphasis">Baptism at Bull Run</span>. The next design diary entry will review those commands available in the third phase of a turn: the Staff Command Phase.</p>
+	</div>
+	<p class="updated">Released: 2008-06-09 13:45 EDT.</p>
+	<script type="text/javascript">
+		pageTracker._trackPageview("/BaptismAtBullRun/Diary4.html");
+	</script>
+
+		<p>&nbsp;</p>
+		<p class="footnote">For questions and/or feedback, please send e-mail to: <a href="http://www.google.com/recaptcha/mailhide/d?k=01Ql1ghA0qoYwz1p3WlNTJjA==&c=uoY2Wh7yKyl3VNH1lS5C9u5ll6oXjqHzCSZm7GRikww=" onclick="pageTracker._trackPageview('/External/www.google.com/recaptcha'); window.open('http://www.google.com/recaptcha/mailhide/d?k=01Ql1ghA0qoYwz1p3WlNTJjA==&c=uoY2Wh7yKyl3VNH1lS5C9u5ll6oXjqHzCSZm7GRikww=', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Click to reveal this e-mail address">baptismatbullrun@....com</a> &nbsp; &nbsp; <span class="emphasis">(Click the hyperlink to reveal the e-mail address.)</span></p>
+		<p class="footnote">Further discussion about <span class="emphasis">Baptism at Bull Run</span> can be found at either of these game hobbyist websites:&nbsp; <a href="http://www.boardgamegeek.com/boardgame/36324" onclick="javascript:pageTracker._trackPageview('/External/boardgamegeek.com');" target="_blank" title="Click to visit Baptism at Bull Run on BoardGameGeek">BoardGameGeek</a> &nbsp;<a href="http://talk.consimworld.com/WebX/Boardgaming/Individual%20Game%20or%20Series%20Discussion/Era%3A%20Gunpowder/American%20Civil%20War/68" onclick="javascript:pageTracker._trackPageview('/External/talk.consimworld.com');" target="_blank" title="Click to visit Baptism at Bull Run on ConsimWorld">ConsimWorld</a></p>
+		<div id="TranslationBar" class="notranslate">
+			<a href="http://translate.google.com/translate_c?tl=ar&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary4.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="العربية" title="العربية" src="Images/flag_saudi_arabia.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=cs&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary4.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Česky" title="Česky" src="Images/flag_czech_republic.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=da&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary4.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Dansk" title="Dansk" src="Images/flag_denmark.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=de&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary4.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Deutsch" title="Deutsch" src="Images/flag_germany.png" height="16" width="16" /></a>
+			<a href="https://muster-roll.com/BaptismAtBullRun/Diary4.html"><img alt="English" title="English" src="Images/flag_usa.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=el&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary4.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Ελληνικά" title="Ελληνικά" src="Images/flag_greece.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=es&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary4.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Espa&ntilde;ol" title="Espa&ntilde;ol" src="Images/flag_spain.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=fr&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary4.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Fran&ccedil;ais" title="Fran&ccedil;ais" src="Images/flag_france.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=it&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary4.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Italiano" title="Italiano" src="Images/flag_italy.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=iw&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary4.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="עברית" title="עברית" src="Images/flag_israel.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=ko&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary4.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="한국어" title="한국어" src="Images/flag_south_korea.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=hu&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary4.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Magyar" title="Magyar" src="Images/flag_hungary.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=nl&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary4.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Nederlands" title="Nederlands" src="Images/flag_netherlands.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=no&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary4.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Norsk" title="Norsk" src="Images/flag_norway.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=ja&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary4.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="日本語" title="日本語" src="Images/flag_japan.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=pl&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary4.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Polski" title="Polski" src="Images/flag_poland.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=pt&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary4.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Portugu&ecirc;s" title="Portugu&ecirc;s" src="Images/flag_portugal.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=ru&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary4.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Русский" title="Русский" src="Images/flag_russia.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=fi&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary4.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Suomi" title="Suomi" src="Images/flag_finland.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=sv&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary4.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="Svenska" title="Svenska" src="Images/flag_sweden.png" height="16" width="16" /></a>
+			<a href="http://translate.google.com/translate_c?tl=zh-cn&amp;u=https://muster-roll.com/BaptismAtBullRun/Diary4.html&amp;sl=en&amp;hl=en&amp;ie=UTF-8"><img alt="中文" title="中文" src="Images/flag_china.png" height="16" width="16" /></a>
+		</div>
+	</div>
+	<div id="FooterFrame">
+		Copyright &copy; 2008-2011. L&aacute;szl&oacute; &Aacute;. Koller. All rights reserved. Unauthorized distribution prohibited.
+		<div style="border-style: none; height: 4px; width: 700px;"></div>
+		Pencil &amp; Wash Drawing: &quot;Colonel Burnside's brigade, First and Second Rhode Island, and Seventy-first New York regiments, with their artillery, attacking the rebel batteries at Bull Run.&quot;, by Alfred R. Waud (1861).</div>
+	</div></div>
+</body>
+</html>

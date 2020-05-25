@@ -1,0 +1,493 @@
+﻿/* Elements */
+
+A:active, A:link, A:visited
+{
+	color: #550000;
+	text-decoration: underline;
+}
+
+A:hover
+{
+	color: #252056;
+	text-decoration: underline;
+}
+
+BODY
+{
+	background-color:#CAC7E5;
+	background-image: url(Images/background.jpg); 
+	background-repeat: repeat; 
+	color: #333333; 
+	font-family: Georgia, Times New Roman, Times, serif; 
+	font-size: 10pt; 
+	line-height: 13pt; 
+	margin: 0px; 
+	padding: 0px;
+}
+
+FORM
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+H1
+{
+	color: #252056;
+	font-family: Georgia, Times New Roman, Times, serif; 
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 20px;
+}
+
+HR
+{
+	border-collapse: collapse;
+	border-style: solid;
+	border-bottom-style: none;
+	color: #E0DDFF;
+	height: 1px;
+	width: 100%;
+}
+
+IMG
+{
+	border-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+LI 
+{
+	margin-bottom: 6px;
+	margin-top: 2px;
+	padding-right: 40px;
+}
+
+OL, UL 
+{
+	margin-top: 0px;
+}
+
+P
+{
+	display: block;
+	margin: 0px; 
+	margin-bottom: 4px; 
+	padding: 0px;
+	width: 100%;
+}
+
+TABLE 
+{
+	border: solid 1px #E0DDFF;
+	border-collapse: collapse;
+	margin: auto;
+	padding: 0px;
+	text-align: center;
+}
+
+TD 
+{
+	border-bottom: solid 1px #E0DDFF;
+	border-right: solid 1px #E0DDFF;
+	color: #252056;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	padding: 4px;
+	text-align: left;
+	vertical-align: top;
+}
+
+TD A:active, TD A:link, TD A:visited
+{
+	color: #550000;
+	text-decoration: underline;
+}
+
+TD A:hover 
+{
+	color: #252056;
+	text-decoration: underline;
+}
+
+TH 
+{
+	background-color: #E0DDFF;
+	color: #550000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	padding: 4px;
+	text-align: left;
+}
+
+#DesignDiaryEntry P
+{
+	margin-bottom: 8px; 
+}
+
+TABLE.diary-entry-table TR TD
+{
+	border-style: none;
+	text-align: center;
+}
+
+/* Classes */
+
+TABLE.diary-entry-table
+{
+	border-style: none;
+}
+
+.a-c
+{
+	text-align: center;
+}
+
+.a-r
+{
+	text-align: right;
+}
+
+.area-id, a.area-id
+{
+	font-size: 0.9em;
+	text-transform: uppercase;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+.caption 
+{
+	color: #252056;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+}
+
+A.diary-summary:active, A.diary-summary:link, A.diary-summary:visited
+{
+	color: #330000;
+	text-decoration: none;
+}
+
+A.diary-summary:hover
+{
+	text-decoration: underline;
+}
+
+A.diary-title:active, A.diary-title:link, A.diary-title:visited, A.support-title:active, A.support-title:link, A.support-title:visited
+
+{
+	color: #550000;
+	font-family: Georgia, Times New Roman, Times, serif; 
+	font-size: 0.95em;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+A.diary-title:hover, A.support-title:hover
+{
+	color: #252056;
+	text-decoration: underline;
+}
+
+DIV.diary-entry-panel
+{
+	float: left;
+	min-height: 128px;
+	width: 370px;
+}
+
+DIV.diary-entry-spacer
+{
+	border-style: none;
+	float: left;
+	height: 128px;
+	width: 20px;
+}
+
+DIV.diary-image-panel
+{
+	float: right;
+	height: 100px;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 100px;
+}
+
+DIV.diary-row
+{
+	margin-bottom: 20px;
+	min-height: 128px;
+	width: 100%;
+}
+
+DIV.diary-summary-panel
+{
+	float: right;
+	margin-top: 10px;
+	width: 260px;
+}
+
+DIV.support-image-panel
+{
+	float: left;
+	height: 100px;
+	width: 100px;
+}
+
+DIV.support-content-panel
+{
+	float: left;
+	margin-left: 20px;
+	width: 640px;
+}
+
+DIV.support-summary-panel
+{
+	margin-top: 10px;
+	width: 640px;
+}
+
+DIV.support-separator-panel
+{
+	height: 30px;
+	width: 760px;
+}
+
+DIV.support-row-inital
+{
+	width: 760px;
+}
+
+DIV.support-row
+{
+	min-height: 100px;
+	width: 760px;
+}
+
+A.download:active, A.download:link, A.download:visited, .download 
+{
+	color: #550000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+A.download:hover 
+{
+	color: #252056;
+}
+
+.download-panel
+{
+	height: 32px;
+	position: relative;
+}
+
+.download-panel > .download-icon
+{
+	height: 32px;
+	left: 340px;
+	position: absolute;
+	top: 0px;
+	width: 32px;
+}
+
+.download-panel > .download-link
+{
+	left: 380px;
+	margin-top: 7px;
+	position: absolute;
+	top: 0px;
+	white-space: nowrap;
+}
+
+.emphasis 
+{
+	font-style: italic;
+}
+
+.footnote 
+{
+	font-size: 0.8em;
+	margin: 0px;
+	padding: 0px;
+}
+
+.heading 
+{
+	color: #550000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.indent
+{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+A.menu:active, A.menu:link, A.menu:visited
+{
+	color: #B2AEA7;
+	text-decoration: none;
+}
+
+A.menu:hover
+{
+	color: #AA5555;
+}
+
+.menu-disabled
+{
+	color: #666666;
+}
+
+.menu-separator
+{
+	color: #AA5555;
+}
+
+.new, .new A
+{
+	color: #318431;
+}
+
+A.rollover-only:active, A.rollover-only:link, A.rollover-only:visited 
+{
+	color: #252056;
+	text-decoration: none;
+}
+
+A.rollover-only:hover 
+{
+	color: #550000;
+	text-decoration: underline;
+}
+
+.sample-game
+{
+	font-size: 0.8em;
+}
+
+.sample-game-heading
+{
+	font-size: 0.9em;
+}
+
+.sample-turn
+{
+	clear: both;
+	width: 100%;
+}
+
+.sample-recap, .sample-image
+{
+	float: left;
+	min-height: 285px;
+	width: 372px;
+}
+
+.sample-spacing
+{
+	float: left;
+	height: 285px;
+	width: 16px;
+}
+
+.table-frame
+{
+	text-align: center;
+}
+
+.title
+{
+	color: #252056;
+	font-family: Georgia, Times New Roman, Times, serif; 
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.updated 
+{
+	color: #B2AEA7;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	text-align: right;
+}
+
+/* Element IDs */
+
+#FFCenteringFrame 
+{
+	background-color: #FFFFFF;
+	margin: auto;
+	width: 800px;
+	border-left: solid 1px #AA5555;
+	border-right: solid 1px #AA5555;
+}
+
+#IECenteringFrame 
+{
+	text-align: center;
+}
+
+#HeadFrame 
+{
+	height: 310px;
+	width: 800px;
+}
+
+#MenuFrame 
+{
+	background-color: #550000;
+	color: #F9EED9;
+	font-family: Georgia, Times New Roman, Times, serif;
+	font-size: 0.8em;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	text-align: center;
+	width: 800px;
+}
+
+#ContentFrame 
+{
+	background-color: #F9EED9;
+	padding: 10px 20px 4px 20px;
+	text-align: justify;
+}
+
+#TranslationBar
+{
+	margin-top: 3px;
+	height: 16px;
+	text-align: center;
+	width: 100%;
+}
+
+#FooterFrame 
+{
+	background-color: #550000;
+	color: #B2AEA7;
+	font-family: Georgia, Times New Roman, Times, serif;
+	font-size: 0.8em;
+	line-height: 1.25em;
+	padding-bottom: 6px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 4px;
+	text-align: justify;
+}
